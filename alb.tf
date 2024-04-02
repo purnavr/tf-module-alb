@@ -7,6 +7,6 @@ resource "aws_lb" "test" {
 
   tags = merge(
     var.tags,
-    { Name = "${var.name}${var.env}" }
+    { Name = "${var.name}-${var.env}" }
   )
 }
